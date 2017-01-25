@@ -1,0 +1,6 @@
+#   http://docs.aws.amazon.com/codedeploy/latest/userguide/app-spec-ref.html
+version: 0.0
+os: linux 
+files:
+  - source: /
+    destination: /www/me-app/
