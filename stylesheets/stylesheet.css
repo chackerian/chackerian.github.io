@@ -67,6 +67,10 @@ header h2 {
   color: #666;
 }
 
+h1 {
+  font-family: "Oswald, sans-serif" !important;
+}
+
 #downloads .btn {
   display: inline-block;
   text-align: center;
