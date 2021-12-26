@@ -322,3 +322,93 @@ footer {
     color:#444;
   }
 }
+
+.contact-form {
+  display:        flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 80px;
+}
+
+.contact-form .wrapper {
+  display:        flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-form label {
+  display: inline-block;
+  background: black;
+  color: black;
+  transform: translate(10px, 10px);
+  padding: 0 10px;
+}
+
+.contact-form :is(input, textarea) {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  background: transparent;
+  border: 1px solid hsla(100, 100%, 100%, 0.2);
+  color: gray;
+  letter-spacing: 0.5px;
+  outline: none;
+/*  transition: var(--default-transition);*/
+}
+
+.contact-form textarea {
+  max-height: 400px;
+  resize: vertical;
+}
+
+.contact-form :is(input, textarea):hover { border-color: gray }
+
+.contact-form :is(input, textarea):focus { border-color: gray }
+
+.contact-form button {
+  color: black;
+  font-size: 21px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 2px solid hsla(100, 100%, 100%, 0.2);
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+/*  transition: var(--default-transition);*/
+}
+
+.contact-form button:hover {
+  color: red;
+  border-color: red;
+}
+
+/**
+ * contact info 
+ */
+
+.address, .phone, .email { margin-bottom: 50px; }
+
+:is(.address, .phone) h4 {
+  color: grey;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.address address,
+.phone a {
+  color: white;
+  font-size: 20px
+  font-style: normal;
+/*  transition: var(--default-transition);*/
+}
+
+.phone a:hover { color: red;}
+
+.email a {
+  color: white;
+  font-size: 20px;
+}
+
