@@ -5,7 +5,7 @@ body {
   color: #eaeaea;
   font: 16px;
   line-height: 1.5;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  font-family: "Open Sans";
 }
 
 /* General & 'Reset' Stuff */
@@ -13,6 +13,11 @@ body {
 .container {
   width: 90%;
   margin: 0 auto;
+}
+
+.social {
+  display: inline-block;
+  float: right;
 }
 
 section {
@@ -37,22 +42,16 @@ li {
 header {
   background: rgba(0, 0, 0, 0.1);
   width: 100%;
-  border-bottom: 1px dashed #b5e853;
   padding: 20px 0;
-  margin: 0 0 40px 0;
 }
 
 header h1 {
-  font-size: 30px;
-  line-height: 1.5;
+  font-size: 40px;
   margin: 0 0 0 -40px;
-  color: red !important;
   font-weight: bold;
-  font-family: Oswald, sans-serif !important;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
-               0 0 5px rgba(181, 232, 83, 0.1),
-               0 0 10px rgba(181, 232, 83, 0.1);
-  letter-spacing: -1px;
+  font-family: "Lobster";
+  color: white;
+  text-align: center;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -91,6 +90,14 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
                0 0 5px rgba(181, 232, 83, 0.1),
                0 0 10px rgba(181, 232, 83, 0.1);
+}
+
+#main_content p {
+  font-size: 1.5em;
+}
+
+.headline {
+  display: inline-block;
 }
 
 #main_content h1 {
@@ -244,6 +251,13 @@ a {
   zoom:1;
 }
 
+.column-content {
+  padding: 2em;
+  margin:  1em;
+  background: darkgreen;
+  border-radius: 1em;
+}
+
 .download-cv {
   border: 2px solid hsla(100, 100%, 100%, 0.2);
   width: 10%;
@@ -264,7 +278,6 @@ a {
 }
 
 .download-cv span {
-  font-size: 20px;
   font-weight: 500;
   text-transform: uppercase;
 }
